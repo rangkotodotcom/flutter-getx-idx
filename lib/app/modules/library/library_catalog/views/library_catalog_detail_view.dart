@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/library_borrow_controller.dart';
-
-class LibraryBorrowView extends GetView<LibraryBorrowController> {
-  const LibraryBorrowView({super.key});
+class LibraryCatalogDetailView extends GetView {
+  const LibraryCatalogDetailView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Peminjaman'),
+        title: const Text('LibraryCatalogDetailView'),
         centerTitle: true,
       ),
       body: const Center(
         child: Text(
-          'LibraryBorrowView is working',
+          'LibraryCatalogDetailView is working',
           style: TextStyle(fontSize: 20),
         ),
       ),
