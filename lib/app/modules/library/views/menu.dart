@@ -21,6 +21,18 @@ class LibraryMenu extends StatelessWidget {
       onTap: () {
         if (code == 'member') {
           Get.toNamed(Routes.LIBRARY_MEMBER);
+        } else if (code == 'catalog') {
+          Get.toNamed(Routes.LIBRARY_CATALOG);
+        } else if (code == 'booking') {
+          Get.toNamed(Routes.LIBRARY_BOOKING);
+        } else if (code == 'borrow') {
+          Get.toNamed(Routes.LIBRARY_BORROW);
+        } else if (code == 'return') {
+          Get.toNamed(Routes.LIBRARY_RETURN);
+        } else if (code == 'loss') {
+          Get.toNamed(Routes.LIBRARY_LOSS);
+        } else if (code == 'visitor') {
+          Get.toNamed(Routes.LIBRARY_VISITOR);
         }
       },
       child: Column(
