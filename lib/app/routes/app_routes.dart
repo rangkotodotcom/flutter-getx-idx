@@ -13,6 +13,7 @@ abstract class Routes {
   static const LIBRARY_RETURN = _Paths.LIBRARY + _Paths.LIBRARY_RETURN;
   static const LIBRARY_LOSS = _Paths.LIBRARY + _Paths.LIBRARY_LOSS;
   static const LIBRARY_VISITOR = _Paths.LIBRARY + _Paths.LIBRARY_VISITOR;
+  static const NOTIFICATION = _Paths.NOTIFICATION;
 }
 
 abstract class _Paths {
@@ -27,4 +28,5 @@ abstract class _Paths {
   static const LIBRARY_RETURN = '/library-return';
   static const LIBRARY_LOSS = '/library-loss';
   static const LIBRARY_VISITOR = '/library-visitor';
+  static const NOTIFICATION = '/notification';
 }

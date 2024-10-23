@@ -18,6 +18,8 @@ import '../modules/library/library_return/views/library_return_view.dart';
 import '../modules/library/library_visitor/bindings/library_visitor_binding.dart';
 import '../modules/library/library_visitor/views/library_visitor_view.dart';
 import '../modules/library/views/library_view.dart';
+import '../modules/notification/bindings/notification_binding.dart';
+import '../modules/notification/views/notification_view.dart';
 import '../modules/permit/bindings/permit_binding.dart';
 import '../modules/permit/views/permit_view.dart';
 
@@ -26,7 +28,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.LIBRARY;
+  static const INITIAL = Routes.NOTIFICATION;
 
   static final routes = [
     GetPage(
@@ -80,6 +82,11 @@ class AppPages {
           binding: LibraryVisitorBinding(),
         ),
       ],
+    ),
+    GetPage(
+      name: _Paths.NOTIFICATION,
+      page: () => const NotificationView(),
+      binding: NotificationBinding(),
     ),
   ];
 }
